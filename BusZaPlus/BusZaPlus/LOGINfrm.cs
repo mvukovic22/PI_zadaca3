@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BusZaPlus
 {
-    public partial class FRMlogin : Form
+    public partial class LOGINfrm : Form
     {
-        public FRMlogin()
+        public LOGINfrm()
         {
             InitializeComponent();
         }
