@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DBLayer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\DBLayer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,7 +50,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\VozneLinije.cs" />
+    <Compile Include="Models\Linija.cs" />
+    <Compile Include="Repositories\LinijaRepository.cs" />
     <Compile Include="STUDENTSfrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,10 +92,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DBLayer\DBLayer.csproj">
-      <Project>{c0754b12-6547-4d5f-bbdf-b92577149357}</Project>
-      <Name>DBLayer</Name>
-    </ProjectReference>
+    <Folder Include="DLL\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
