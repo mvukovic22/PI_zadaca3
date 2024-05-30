@@ -12,8 +12,8 @@ namespace BusZaPlus.Models
         public int ID_stanice { get; set; }
 
         public int ID_vozila { get; set; }
-        public DateTime Termin_Odlaska { get; set; }
-        public DateTime Termin_Dolaska { get; set; }
+        public TimeSpan Termin_Odlaska { get; set; }
+        public TimeSpan Termin_Dolaska { get; set; }
         public string Opis { get; set; }
 
     }

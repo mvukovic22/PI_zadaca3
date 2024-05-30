@@ -27,7 +27,7 @@ namespace BusZaPlus
                 MessageBox.Show("Popunite sva polja", "Pogreška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
-            else if (username == "nastavnik" && password == "test")
+            else if (username == "mladenvukovic55" && password == "2503")
             {
                 Hide();
                 STUDENTSfrm Studentsfrm = new STUDENTSfrm();
