@@ -16,5 +16,28 @@ namespace BusZaPlus
         {
             InitializeComponent();
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+           string username = txtUsername.Text;
+           string password = txtPassword.Text;
+
+            if (username == "" || password == "")
+            {
+                MessageBox.Show("Popunite sva polja", "Pogreška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+            else if (username == "nastavnik" && password == "test")
+            {
+                Hide();
+                STUDENTSfrm Studentsfrm = new STUDENTSfrm();
+                Studentsfrm.ShowDialog();
+                Close();
+            }
+            else
+            {
+                MessageBox.Show("Pogrešni podaci", "Neuspjela prijava", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }
