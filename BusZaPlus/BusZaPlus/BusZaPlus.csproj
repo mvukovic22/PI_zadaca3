@@ -52,11 +52,11 @@
   <ItemGroup>
     <Compile Include="Models\Linija.cs" />
     <Compile Include="Repositories\LinijaRepository.cs" />
-    <Compile Include="STUDENTSfrm.cs">
+    <Compile Include="LINIJEfrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="STUDENTSfrm.Designer.cs">
-      <DependentUpon>STUDENTSfrm.cs</DependentUpon>
+    <Compile Include="LINIJEfrm.Designer.cs">
+      <DependentUpon>LINIJEfrm.cs</DependentUpon>
     </Compile>
     <Compile Include="LOGINfrm.cs">
       <SubType>Form</SubType>
@@ -78,6 +78,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="LINIJEfrm.resx">
+      <DependentUpon>LINIJEfrm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

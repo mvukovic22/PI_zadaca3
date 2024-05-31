@@ -30,8 +30,8 @@ namespace BusZaPlus
             else if (username == "mladenvukovic55" && password == "2503")
             {
                 Hide();
-                STUDENTSfrm Studentsfrm = new STUDENTSfrm();
-                Studentsfrm.ShowDialog();
+                LINIJEfrm Linijefrm = new LINIJEfrm();
+                Linijefrm.ShowDialog();
                 Close();
             }
             else
