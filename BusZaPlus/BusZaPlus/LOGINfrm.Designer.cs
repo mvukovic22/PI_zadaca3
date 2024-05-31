@@ -38,42 +38,49 @@
             // lblUsername
             // 
             this.lblUsername.AutoSize = true;
+            this.lblUsername.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.lblUsername.Location = new System.Drawing.Point(21, 33);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(114, 20);
+            this.lblUsername.Size = new System.Drawing.Size(131, 25);
             this.lblUsername.TabIndex = 0;
             this.lblUsername.Text = "Korisničko ime:";
+            this.lblUsername.Click += new System.EventHandler(this.lblUsername_Click);
             // 
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(67, 74);
+            this.lblPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblPassword.Location = new System.Drawing.Point(77, 74);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(68, 20);
+            this.lblPassword.Size = new System.Drawing.Size(75, 25);
             this.lblPassword.TabIndex = 1;
             this.lblPassword.Text = "Lozinka:";
             // 
             // txtUsername
             // 
+            this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.txtUsername.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.txtUsername.Location = new System.Drawing.Point(141, 30);
+            this.txtUsername.Location = new System.Drawing.Point(158, 34);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(182, 26);
+            this.txtUsername.Size = new System.Drawing.Size(182, 29);
             this.txtUsername.TabIndex = 2;
+            this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged);
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(141, 74);
+            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.txtPassword.Location = new System.Drawing.Point(158, 75);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(182, 26);
+            this.txtPassword.Size = new System.Drawing.Size(182, 29);
             this.txtPassword.TabIndex = 3;
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(141, 131);
+            this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.btnLogin.Location = new System.Drawing.Point(141, 129);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(92, 31);
+            this.btnLogin.Size = new System.Drawing.Size(92, 40);
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "PRIJAVA";
             this.btnLogin.UseVisualStyleBackColor = true;

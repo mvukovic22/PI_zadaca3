@@ -35,9 +35,48 @@ namespace BusZaPlus
             dgvLinije.Columns["ID_stanice_dolazak"].DisplayIndex = 2;
             dgvLinije.Columns["Termin_dolaska"].DisplayIndex = 4;
             dgvLinije.Columns["Opis"].DisplayIndex = 5;
+
+
+            dgvLinije.Columns["ID_linije"].HeaderText = "Linija";
+            dgvLinije.Columns["ID_stanice_polazak"].HeaderText = "Stanica polaska";
+            dgvLinije.Columns["ID_stanice_dolazak"].HeaderText = "Stanica odredišta";
+            dgvLinije.Columns["ID_vozila"].HeaderText = "Vozilo";
+            dgvLinije.Columns["Termin_dolaska"].HeaderText = "Vrijeme polaska";
+            dgvLinije.Columns["Opis"].HeaderText = "Opis linije";
+
+            dgvLinije.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
- 
+        private void dgvLinije_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnNovo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPretrazi_Click(object sender, EventArgs e)
+        {
+
+        }
+
 
         /*private void btnEvaluateStudent_Click(object sender, EventArgs e)
         {
