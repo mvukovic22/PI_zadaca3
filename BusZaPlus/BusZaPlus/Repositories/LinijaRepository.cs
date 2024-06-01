@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace BusZaPlus.Repositories
 {
@@ -69,5 +70,21 @@ namespace BusZaPlus.Repositories
 
             return linija;
         }
+
+        public static void UnosLinije(Linija linija)
+        { 
+            string sql = $"INSERT INTO dbo.VozneLinije (ID_linije, ID_stanice_dolazak, ID_stanice_polazak, ID_vozila, Termin_dolaska, Opis ) VALUES('{linija.ID_linije}','{linija.ID_stanice_dolazak}', '{linija.ID_stanice_polazak}', '{linija.ID_vozila}', '{linija.Termin_dolaska}', '{linija.Opis}')"; 
+            DB.OpenConnection();
+            DB.ExecuteCommand(sql);
+            DB.CloseConnection();
+        }
+
+        /*public static void UpdateEvaluation(Linija linija)
+        {
+            string sql = $"UPDATE dbo.VozneLinije SET ID_linije = {linija.ID_linije}";
+            DB.OpenConnection();
+            DB.ExecuteCommand(sql);
+            DB.CloseConnection();
+        }*/
     }
 }

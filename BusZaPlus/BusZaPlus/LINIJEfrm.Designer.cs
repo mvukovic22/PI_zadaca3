@@ -49,7 +49,7 @@
             this.dgvLinije.Name = "dgvLinije";
             this.dgvLinije.RowHeadersWidth = 62;
             this.dgvLinije.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvLinije.Size = new System.Drawing.Size(1164, 342);
+            this.dgvLinije.Size = new System.Drawing.Size(1087, 297);
             this.dgvLinije.TabIndex = 0;
             this.dgvLinije.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLinije_CellContentClick);
             // 
@@ -57,7 +57,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Light", 16F);
-            this.label1.Location = new System.Drawing.Point(415, 9);
+            this.label1.Location = new System.Drawing.Point(389, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(402, 45);
             this.label1.TabIndex = 2;
@@ -68,7 +68,7 @@
             // 
             this.btnNovo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(194)))), ((int)(((byte)(173)))));
             this.btnNovo.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.btnNovo.Location = new System.Drawing.Point(193, 443);
+            this.btnNovo.Location = new System.Drawing.Point(18, 391);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(199, 49);
             this.btnNovo.TabIndex = 3;
@@ -80,19 +80,18 @@
             // 
             this.btnUredi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(194)))), ((int)(((byte)(173)))));
             this.btnUredi.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.btnUredi.Location = new System.Drawing.Point(467, 443);
+            this.btnUredi.Location = new System.Drawing.Point(255, 391);
             this.btnUredi.Name = "btnUredi";
             this.btnUredi.Size = new System.Drawing.Size(121, 49);
             this.btnUredi.TabIndex = 4;
             this.btnUredi.Text = "UREDI";
             this.btnUredi.UseVisualStyleBackColor = false;
-            this.btnUredi.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnIzbrisi
             // 
             this.btnIzbrisi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(194)))), ((int)(((byte)(173)))));
             this.btnIzbrisi.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.btnIzbrisi.Location = new System.Drawing.Point(649, 443);
+            this.btnIzbrisi.Location = new System.Drawing.Point(413, 391);
             this.btnIzbrisi.Name = "btnIzbrisi";
             this.btnIzbrisi.Size = new System.Drawing.Size(121, 49);
             this.btnIzbrisi.TabIndex = 5;
@@ -103,7 +102,7 @@
             // 
             this.btnPretrazi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(194)))), ((int)(((byte)(173)))));
             this.btnPretrazi.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.btnPretrazi.Location = new System.Drawing.Point(841, 443);
+            this.btnPretrazi.Location = new System.Drawing.Point(572, 391);
             this.btnPretrazi.Name = "btnPretrazi";
             this.btnPretrazi.Size = new System.Drawing.Size(139, 49);
             this.btnPretrazi.TabIndex = 6;
@@ -116,7 +115,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(229)))), ((int)(((byte)(217)))));
-            this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.ClientSize = new System.Drawing.Size(1127, 461);
             this.Controls.Add(this.btnPretrazi);
             this.Controls.Add(this.btnIzbrisi);
             this.Controls.Add(this.btnUredi);
@@ -129,7 +128,7 @@
             this.MinimizeBox = false;
             this.Name = "LINIJEfrm";
             this.ShowIcon = false;
-            this.Text = "Prikaz linija";
+            this.Text = "Prikaz svih voznih linija";
             this.Load += new System.EventHandler(this.LINIJEfrm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLinije)).EndInit();
             this.ResumeLayout(false);

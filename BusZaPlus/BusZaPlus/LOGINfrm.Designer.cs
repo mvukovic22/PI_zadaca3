@@ -39,7 +39,7 @@
             // 
             this.lblUsername.AutoSize = true;
             this.lblUsername.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblUsername.Location = new System.Drawing.Point(21, 33);
+            this.lblUsername.Location = new System.Drawing.Point(21, 34);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(131, 25);
             this.lblUsername.TabIndex = 0;
@@ -77,13 +77,14 @@
             // 
             // btnLogin
             // 
-            this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(194)))), ((int)(((byte)(173)))));
+            this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnLogin.Location = new System.Drawing.Point(141, 129);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(92, 40);
+            this.btnLogin.Size = new System.Drawing.Size(98, 49);
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "PRIJAVA";
-            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // LOGINfrm

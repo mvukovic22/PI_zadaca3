@@ -64,17 +64,37 @@ namespace BusZaPlus
 
         private void btnNovo_Click(object sender, EventArgs e)
         {
-
+            UNOSfrm Unosfrm = new UNOSfrm();
+            Unosfrm.ShowDialog();
+            ShowVozneLinije();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnPretrazi_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnIzbrisi_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnUredi_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSpremi_Click(object sender, EventArgs e)
+        {
+            UNOSfrm Unosfrm = new UNOSfrm();
+            Unosfrm.FormClosed += UNOSfrm_FormClosed;
+            Unosfrm.ShowDialog();
+        }
+
+        private void UNOSfrm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            ShowVozneLinije();
         }
 
 
