@@ -35,56 +35,6 @@ namespace BusZaPlus
 
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click_2(object sender, EventArgs e)
-        {
-
-        }
-
-        private void combPolazak_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void combDolazak_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void numVozilo_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dateVrijeme_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtOpis_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnSpremi_Click(object sender, EventArgs e)
         {
             var linija = new Linija()

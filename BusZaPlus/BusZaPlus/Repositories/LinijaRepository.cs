@@ -89,12 +89,13 @@ namespace BusZaPlus.Repositories
         }
 
         public static void BrisanjeLinije(int ID_linije)
-        {
-            string sql = $"DELETE FROM dbo.VozneLinije WHERE ID_linije = '{ID_linije}'";
-            DB.OpenConnection();
-            DB.ExecuteCommand(sql);
-            DB.CloseConnection();
+         {
+             string sql = $"DELETE FROM dbo.VozneLinije WHERE ID_linije = '{ID_linije}'";
+             DB.OpenConnection();
+             DB.ExecuteCommand(sql);
+             DB.CloseConnection();
 
-        }
+         }
+
     }
 }

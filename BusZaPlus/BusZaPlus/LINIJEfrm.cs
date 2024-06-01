@@ -60,13 +60,6 @@ namespace BusZaPlus
 
         }
 
-        private void btnIzbrisi_Click(object sender, EventArgs e)
-        {
-            UNOSfrm Unosfrm = new UNOSfrm();
-            Unosfrm.ShowDialog();
-            ShowVozneLinije();
-
-        }
 
       
 
@@ -89,5 +82,13 @@ namespace BusZaPlus
             Close();
         }
 
+        private void btnIzbrisi_Click_1(object sender, EventArgs e)
+        {
+            Hide();
+            BRISANJEfrm Brisanjefrm = new BRISANJEfrm();
+            Brisanjefrm.ShowDialog();
+            //ShowVozneLinije();
+            Close();
+        }
     }
 }

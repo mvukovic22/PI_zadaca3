@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UPDATEfrm));
             this.label1 = new System.Windows.Forms.Label();
             this.lblOpis = new System.Windows.Forms.Label();
             this.lblVrijeme = new System.Windows.Forms.Label();
@@ -193,10 +194,10 @@
             this.Controls.Add(this.lblPolazak);
             this.Controls.Add(this.lblLinija);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "UPDATEfrm";
-            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ažuriranje vozne linije";
             this.Load += new System.EventHandler(this.UPDATEfrm_Load);

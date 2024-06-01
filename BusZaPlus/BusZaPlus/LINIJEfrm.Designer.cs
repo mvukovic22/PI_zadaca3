@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LINIJEfrm));
             this.dgvLinije = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.btnNovo = new System.Windows.Forms.Button();
@@ -96,7 +97,7 @@
             this.btnIzbrisi.TabIndex = 5;
             this.btnIzbrisi.Text = "IZBRIŠI";
             this.btnIzbrisi.UseVisualStyleBackColor = false;
-            
+            this.btnIzbrisi.Click += new System.EventHandler(this.btnIzbrisi_Click_1);
             // 
             // btnPretrazi
             // 
@@ -123,11 +124,11 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvLinije);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "LINIJEfrm";
-            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Prikaz svih voznih linija";
             this.Load += new System.EventHandler(this.LINIJEfrm_Load);
