@@ -51,7 +51,6 @@
             this.dgvLinije.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvLinije.Size = new System.Drawing.Size(1087, 297);
             this.dgvLinije.TabIndex = 0;
-            this.dgvLinije.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLinije_CellContentClick);
             // 
             // label1
             // 
@@ -62,7 +61,6 @@
             this.label1.Size = new System.Drawing.Size(402, 45);
             this.label1.TabIndex = 2;
             this.label1.Text = "PRIKAZ SVIH VOZNIH LINIJA";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnNovo
             // 
@@ -86,6 +84,7 @@
             this.btnUredi.TabIndex = 4;
             this.btnUredi.Text = "UREDI";
             this.btnUredi.UseVisualStyleBackColor = false;
+            this.btnUredi.Click += new System.EventHandler(this.btnUredi_Click);
             // 
             // btnIzbrisi
             // 
@@ -97,6 +96,7 @@
             this.btnIzbrisi.TabIndex = 5;
             this.btnIzbrisi.Text = "IZBRIŠI";
             this.btnIzbrisi.UseVisualStyleBackColor = false;
+            
             // 
             // btnPretrazi
             // 
@@ -128,6 +128,7 @@
             this.MinimizeBox = false;
             this.Name = "LINIJEfrm";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Prikaz svih voznih linija";
             this.Load += new System.EventHandler(this.LINIJEfrm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLinije)).EndInit();

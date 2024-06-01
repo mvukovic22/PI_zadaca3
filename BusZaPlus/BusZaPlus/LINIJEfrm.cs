@@ -47,21 +47,6 @@ namespace BusZaPlus
             dgvLinije.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
-        private void dgvLinije_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnNovo_Click(object sender, EventArgs e)
         {
             UNOSfrm Unosfrm = new UNOSfrm();
@@ -77,13 +62,13 @@ namespace BusZaPlus
 
         private void btnIzbrisi_Click(object sender, EventArgs e)
         {
+            UNOSfrm Unosfrm = new UNOSfrm();
+            Unosfrm.ShowDialog();
+            ShowVozneLinije();
 
         }
 
-        private void btnUredi_Click(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void btnSpremi_Click(object sender, EventArgs e)
         {
@@ -97,15 +82,12 @@ namespace BusZaPlus
             ShowVozneLinije();
         }
 
-
-        /*private void btnEvaluateStudent_Click(object sender, EventArgs e)
+        private void btnUredi_Click(object sender, EventArgs e)
         {
-            Student selectedStudent = dgvStudents.CurrentRow.DataBoundItem as Student;
-            if (selectedStudent != null)
-            {
-                FrmEvaluation frmEvaluation = new FrmEvaluation(selectedStudent);
-                frmEvaluation.ShowDialog();
-            }
-        }*/
+            UPDATEfrm Updatefrm = new UPDATEfrm();
+            Updatefrm.ShowDialog();
+            Close();
+        }
+
     }
 }

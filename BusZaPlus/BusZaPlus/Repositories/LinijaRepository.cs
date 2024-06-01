@@ -72,19 +72,29 @@ namespace BusZaPlus.Repositories
         }
 
         public static void UnosLinije(Linija linija)
-        { 
-            string sql = $"INSERT INTO dbo.VozneLinije (ID_linije, ID_stanice_dolazak, ID_stanice_polazak, ID_vozila, Termin_dolaska, Opis ) VALUES('{linija.ID_linije}','{linija.ID_stanice_dolazak}', '{linija.ID_stanice_polazak}', '{linija.ID_vozila}', '{linija.Termin_dolaska}', '{linija.Opis}')"; 
+        {
+            string sql = $"INSERT INTO dbo.VozneLinije (ID_linije, ID_stanice_dolazak, ID_stanice_polazak, ID_vozila, Termin_dolaska, Opis ) VALUES('{linija.ID_linije}','{linija.ID_stanice_dolazak}', '{linija.ID_stanice_polazak}', '{linija.ID_vozila}', '{linija.Termin_dolaska}', '{linija.Opis}')";
             DB.OpenConnection();
             DB.ExecuteCommand(sql);
             DB.CloseConnection();
         }
 
-        /*public static void UpdateEvaluation(Linija linija)
+
+        public static void AzuriranjeLinije(Linija linija)
         {
-            string sql = $"UPDATE dbo.VozneLinije SET ID_linije = {linija.ID_linije}";
+            string sql = $"UPDATE dbo.VozneLinije SET ID_stanice_dolazak = '{linija.ID_stanice_dolazak}', ID_stanice_polazak = '{linija.ID_stanice_polazak}', ID_vozila = '{linija.ID_vozila}', Termin_dolaska = '{linija.Termin_dolaska}', Opis = '{linija.Opis}' WHERE ID_linije = '{linija.ID_linije}'";
             DB.OpenConnection();
             DB.ExecuteCommand(sql);
             DB.CloseConnection();
-        }*/
+        }
+
+        public static void BrisanjeLinije(int ID_linije)
+        {
+            string sql = $"DELETE FROM dbo.VozneLinije WHERE ID_linije = '{ID_linije}'";
+            DB.OpenConnection();
+            DB.ExecuteCommand(sql);
+            DB.CloseConnection();
+
+        }
     }
 }
