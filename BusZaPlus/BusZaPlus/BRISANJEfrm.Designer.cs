@@ -39,7 +39,7 @@
             // btnObrisi
             // 
             this.btnObrisi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(194)))), ((int)(((byte)(173)))));
-            this.btnObrisi.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnObrisi.Font = new System.Drawing.Font("Segoe UI Light", 12F);
             this.btnObrisi.Location = new System.Drawing.Point(256, 135);
             this.btnObrisi.Name = "btnObrisi";
             this.btnObrisi.Size = new System.Drawing.Size(115, 49);
@@ -70,9 +70,10 @@
             // 
             // numLinija
             // 
-            this.numLinija.Location = new System.Drawing.Point(365, 80);
+            this.numLinija.Font = new System.Drawing.Font("Segoe UI Light", 10F);
+            this.numLinija.Location = new System.Drawing.Point(365, 76);
             this.numLinija.Name = "numLinija";
-            this.numLinija.Size = new System.Drawing.Size(117, 26);
+            this.numLinija.Size = new System.Drawing.Size(117, 34);
             this.numLinija.TabIndex = 8;
             // 
             // BRISANJEfrm

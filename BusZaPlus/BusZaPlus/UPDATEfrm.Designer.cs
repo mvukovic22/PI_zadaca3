@@ -170,7 +170,7 @@
             // BtnSpremi
             // 
             this.BtnSpremi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(194)))), ((int)(((byte)(173)))));
-            this.BtnSpremi.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.BtnSpremi.Font = new System.Drawing.Font("Segoe UI Light", 12F);
             this.BtnSpremi.Location = new System.Drawing.Point(529, 253);
             this.BtnSpremi.Name = "BtnSpremi";
             this.BtnSpremi.Size = new System.Drawing.Size(121, 49);

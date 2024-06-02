@@ -48,20 +48,9 @@ namespace BusZaPlus
                 Termin_dolaska = TimeSpan.Parse(dateVrijeme.Text),
                 Opis = txtOpis.Text
             };
+            MessageBox.Show("Linija je uspješno dodana.", "Uspješno", MessageBoxButtons.OK, MessageBoxIcon.Information);
             LinijaRepository.UnosLinije(linija);
             this.Close();
         }
-
-        /*private void btnSpremi_Click(object sender, EventArgs e)
-        {
-            UNOSfrm Unosfrm = new UNOSfrm();
-            Unosfrm.FormClosed += UNOSfrm_FormClosed;
-            Unosfrm.ShowDialog();
-        }
-
-        private void UNOSfrm_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            ShowVozneLinije();
-        }*/
     }
 }

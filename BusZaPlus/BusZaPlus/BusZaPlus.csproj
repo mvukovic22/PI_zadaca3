@@ -56,6 +56,12 @@
     <Compile Include="BRISANJEfrm.Designer.cs">
       <DependentUpon>BRISANJEfrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DETALJI2frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DETALJI2frm.Designer.cs">
+      <DependentUpon>DETALJI2frm.cs</DependentUpon>
+    </Compile>
     <Compile Include="DETALJIfrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,9 @@
     </Compile>
     <EmbeddedResource Include="BRISANJEfrm.resx">
       <DependentUpon>BRISANJEfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DETALJI2frm.resx">
+      <DependentUpon>DETALJI2frm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DETALJIfrm.resx">
       <DependentUpon>DETALJIfrm.cs</DependentUpon>

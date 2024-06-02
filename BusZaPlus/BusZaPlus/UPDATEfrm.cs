@@ -47,7 +47,7 @@ namespace BusZaPlus
             };
 
             LinijaRepository.AzuriranjeLinije(linija);
-            MessageBox.Show("Linije su uspješno izmijenjene.", "Uspješno", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Linija je uspješno izmijenjena.", "Uspješno", MessageBoxButtons.OK, MessageBoxIcon.Information);
             Hide();
             LINIJEfrm Linijefrm = new LINIJEfrm();
             Linijefrm.ShowDialog();

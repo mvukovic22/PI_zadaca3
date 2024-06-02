@@ -59,7 +59,7 @@
             // 
             // txtUsername
             // 
-            this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.txtUsername.Font = new System.Drawing.Font("Segoe UI Light", 8F);
             this.txtUsername.ForeColor = System.Drawing.SystemColors.MenuText;
             this.txtUsername.Location = new System.Drawing.Point(158, 34);
             this.txtUsername.Name = "txtUsername";
@@ -68,7 +68,7 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.txtPassword.Font = new System.Drawing.Font("Segoe UI Light", 8F);
             this.txtPassword.Location = new System.Drawing.Point(158, 75);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';

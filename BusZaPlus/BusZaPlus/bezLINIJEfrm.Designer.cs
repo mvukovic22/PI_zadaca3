@@ -81,6 +81,7 @@
             // 
             // btnDetalji
             // 
+            this.btnDetalji.Font = new System.Drawing.Font("Segoe UI Light", 9F);
             this.btnDetalji.Location = new System.Drawing.Point(857, 427);
             this.btnDetalji.Name = "btnDetalji";
             this.btnDetalji.Size = new System.Drawing.Size(248, 35);

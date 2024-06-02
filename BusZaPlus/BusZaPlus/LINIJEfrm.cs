@@ -83,8 +83,8 @@ namespace BusZaPlus
 
         private void btnDetalji_Click(object sender, EventArgs e)
         {
-            DETALJIfrm Detaljifrm = new DETALJIfrm();
-            Detaljifrm.ShowDialog();
+            DETALJI2frm Detalji2frm = new DETALJI2frm();
+            Detalji2frm.ShowDialog();
             //ShowVozneLinije();
             Close();
 
