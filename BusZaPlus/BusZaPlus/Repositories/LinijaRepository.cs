@@ -97,5 +97,62 @@ namespace BusZaPlus.Repositories
 
          }
 
+        /*public static List<Linija> PretrazivanjeLinije(int uvjet)
+        {
+            var linije = new List<Linija>();
+
+            string sql = $"SELECT * FROM dbo.VozneLinije WHERE ID_stanice_polazak = {uvjet}";
+            DB.OpenConnection();
+            var reader = DB.GetDataReader(sql);
+            while (reader.Read())
+            {
+                Linija linija = CreateObject(reader);
+                linije.Add(linija);
+            }
+
+            reader.Close();
+            DB.CloseConnection();
+
+            return linije;
+        }*/
+
+        public static List<Linija> PretrazivanjeLinije(int uvjet, int uvjet2)
+        {
+            var linije = new List<Linija>();
+
+            string sql = "SELECT * FROM dbo.VozneLinije WHERE ";
+
+            if (uvjet != 0 && uvjet2 == 0)
+            {
+                sql += $"(ID_stanice_polazak = {uvjet})";
+            }
+            else if (uvjet2 != 0 && uvjet == 0)
+            {
+                sql += $"(ID_vozila = {uvjet2})";
+            }
+            else if (uvjet != 0 && uvjet2 != 0)
+            {
+                sql += $"(ID_stanice_polazak = {uvjet}) AND (ID_vozila = {uvjet2})";
+            }
+            else
+            {
+                sql += "1 = 1"; // Uvjet koji će uvijek biti zadovoljen ako nema dodatnih uvjeta
+            }
+
+            DB.OpenConnection();
+            var reader = DB.GetDataReader(sql);
+            while (reader.Read())
+            {
+                Linija linija = CreateObject(reader);
+                linije.Add(linija);
+            }
+
+            reader.Close();
+            DB.CloseConnection();
+
+            return linije;
+        }
+
+
     }
 }

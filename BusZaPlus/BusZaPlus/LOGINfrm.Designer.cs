@@ -40,20 +40,20 @@
             // lblUsername
             // 
             this.lblUsername.AutoSize = true;
-            this.lblUsername.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblUsername.Location = new System.Drawing.Point(21, 34);
+            this.lblUsername.Font = new System.Drawing.Font("Segoe UI Light", 10F);
+            this.lblUsername.Location = new System.Drawing.Point(20, 31);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(131, 25);
+            this.lblUsername.Size = new System.Drawing.Size(136, 28);
             this.lblUsername.TabIndex = 0;
             this.lblUsername.Text = "Korisničko ime:";
             // 
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblPassword.Location = new System.Drawing.Point(77, 74);
+            this.lblPassword.Font = new System.Drawing.Font("Segoe UI Light", 10F);
+            this.lblPassword.Location = new System.Drawing.Point(77, 72);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(75, 25);
+            this.lblPassword.Size = new System.Drawing.Size(79, 28);
             this.lblPassword.TabIndex = 1;
             this.lblPassword.Text = "Lozinka:";
             // 
@@ -78,26 +78,26 @@
             // BtnLogin
             // 
             this.BtnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(194)))), ((int)(((byte)(173)))));
-            this.BtnLogin.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BtnLogin.Font = new System.Drawing.Font("Segoe UI Light", 9F);
             this.BtnLogin.Location = new System.Drawing.Point(141, 129);
             this.BtnLogin.Name = "BtnLogin";
             this.BtnLogin.Size = new System.Drawing.Size(98, 49);
             this.BtnLogin.TabIndex = 4;
             this.BtnLogin.Text = "PRIJAVA";
             this.BtnLogin.UseVisualStyleBackColor = false;
-            this.BtnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            this.BtnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
             // 
             // BtnBezPrijave
             // 
             this.BtnBezPrijave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(194)))), ((int)(((byte)(173)))));
-            this.BtnBezPrijave.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BtnBezPrijave.Font = new System.Drawing.Font("Segoe UI Light", 9F);
             this.BtnBezPrijave.Location = new System.Drawing.Point(82, 184);
             this.BtnBezPrijave.Name = "BtnBezPrijave";
             this.BtnBezPrijave.Size = new System.Drawing.Size(199, 49);
             this.BtnBezPrijave.TabIndex = 5;
             this.BtnBezPrijave.Text = "NASTAVI BEZ PRIJAVE";
             this.BtnBezPrijave.UseVisualStyleBackColor = false;
-            this.BtnBezPrijave.Click += new System.EventHandler(this.btnBezPrijave_Click_1);
+            this.BtnBezPrijave.Click += new System.EventHandler(this.BtnBezPrijave_Click_1);
             // 
             // LOGINfrm
             // 

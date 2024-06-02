@@ -51,10 +51,10 @@
             // lblBrisanje
             // 
             this.lblBrisanje.AutoSize = true;
-            this.lblBrisanje.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lblBrisanje.Location = new System.Drawing.Point(12, 75);
+            this.lblBrisanje.Font = new System.Drawing.Font("Segoe UI Light", 10F);
+            this.lblBrisanje.Location = new System.Drawing.Point(56, 78);
             this.lblBrisanje.Name = "lblBrisanje";
-            this.lblBrisanje.Size = new System.Drawing.Size(312, 28);
+            this.lblBrisanje.Size = new System.Drawing.Size(293, 28);
             this.lblBrisanje.TabIndex = 6;
             this.lblBrisanje.Text = "Unesite ID linije koju želite obrisati";
             // 
@@ -80,7 +80,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(229)))), ((int)(((byte)(217)))));
-            this.ClientSize = new System.Drawing.Size(614, 196);
+            this.ClientSize = new System.Drawing.Size(614, 200);
             this.Controls.Add(this.numLinija);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblBrisanje);

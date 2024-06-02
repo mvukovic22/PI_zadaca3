@@ -35,6 +35,7 @@
             this.btnUredi = new System.Windows.Forms.Button();
             this.btnIzbrisi = new System.Windows.Forms.Button();
             this.btnDetalji = new System.Windows.Forms.Button();
+            this.btnOdjava = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLinije)).BeginInit();
             this.SuspendLayout();
             // 
@@ -109,12 +110,25 @@
             this.btnDetalji.UseVisualStyleBackColor = true;
             this.btnDetalji.Click += new System.EventHandler(this.btnDetalji_Click);
             // 
+            // btnOdjava
+            // 
+            this.btnOdjava.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(183)))), ((int)(((byte)(161)))));
+            this.btnOdjava.Font = new System.Drawing.Font("Segoe UI Light", 12F);
+            this.btnOdjava.Location = new System.Drawing.Point(984, 9);
+            this.btnOdjava.Name = "btnOdjava";
+            this.btnOdjava.Size = new System.Drawing.Size(121, 51);
+            this.btnOdjava.TabIndex = 8;
+            this.btnOdjava.Text = "ODJAVA";
+            this.btnOdjava.UseVisualStyleBackColor = false;
+            this.btnOdjava.Click += new System.EventHandler(this.btnOdjava_Click);
+            // 
             // LINIJEfrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(229)))), ((int)(((byte)(217)))));
             this.ClientSize = new System.Drawing.Size(1127, 509);
+            this.Controls.Add(this.btnOdjava);
             this.Controls.Add(this.btnDetalji);
             this.Controls.Add(this.btnIzbrisi);
             this.Controls.Add(this.btnUredi);
@@ -145,5 +159,6 @@
         private System.Windows.Forms.Button btnUredi;
         private System.Windows.Forms.Button btnIzbrisi;
         private System.Windows.Forms.Button btnDetalji;
+        private System.Windows.Forms.Button btnOdjava;
     }
 }

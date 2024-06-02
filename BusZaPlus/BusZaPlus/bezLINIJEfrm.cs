@@ -56,8 +56,54 @@ namespace BusZaPlus
             Detaljifrm.ShowDialog();
             //ShowVozneLinije();
             Close();
-
         }
 
+        /*private void pretrazifunkcija()
+        {
+            int uvjet = int.Parse(txtPretraga.Text);
+            int uvjet2 = int.Parse(txtPretraga2.Text);
+            List<Linija> linije = LinijaRepository.PretrazivanjeLinije(uvjet, uvjet2);
+            dgvLinije.DataSource = linije;
+        }*/
+        private void pretrazifunkcija()
+        {
+            int uvjet;
+            int uvjet2;
+            
+        if (!string.IsNullOrEmpty(txtPretraga.Text) && int.TryParse(txtPretraga.Text, out uvjet))
+            {
+                if (!string.IsNullOrEmpty(txtPretraga2.Text) && int.TryParse(txtPretraga2.Text, out uvjet2))
+                {
+                    // Ako su oba uvjeta upisana, pretraži po oba uvjeta
+                    List<Linija> linije = LinijaRepository.PretrazivanjeLinije(uvjet, uvjet2);
+                    dgvLinije.DataSource = linije;
+                }
+                else
+                {
+                    List<Linija> linije = LinijaRepository.PretrazivanjeLinije(uvjet, 0);
+                    dgvLinije.DataSource = linije;
+                }
+                }
+                else if (!string.IsNullOrEmpty(txtPretraga2.Text) && int.TryParse(txtPretraga2.Text, out uvjet2))
+                {
+                List<Linija> linije = LinijaRepository.PretrazivanjeLinije(0, uvjet2);
+                dgvLinije.DataSource = linije;
+                }
+        }
+        private void btnPretrazi_Click(object sender, EventArgs e)
+        {
+            pretrazifunkcija();
+        }
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            ShowVozneLinije();
+        }
+
+        private void btnPovratak_Click(object sender, EventArgs e)
+        {
+            Hide();
+            LOGINfrm Loginfrm = new LOGINfrm();
+            Loginfrm.ShowDialog();
+        }
     }
 }

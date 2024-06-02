@@ -90,5 +90,11 @@ namespace BusZaPlus
 
         }
 
+        private void btnOdjava_Click(object sender, EventArgs e)
+        {
+            Hide();
+            LOGINfrm Loginfrm = new LOGINfrm();
+            Loginfrm.ShowDialog(); 
+        }
     }
 }

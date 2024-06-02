@@ -19,10 +19,10 @@ namespace BusZaPlus
 
         private void btnZatvori_Click(object sender, EventArgs e)
         {
-            Hide();
-            LINIJEfrm Linijefrm = new LINIJEfrm();
-            Linijefrm.ShowDialog();
-            Close();
+          Hide();
+          bezLINIJEfrm BezLinijefrm = new bezLINIJEfrm();
+          BezLinijefrm.ShowDialog();
+          Close();
         }
     }
 }

@@ -15,7 +15,9 @@ namespace BusZaPlus
     {
         public BRISANJEfrm()
         {
+            
             InitializeComponent();
+            numLinija.Value = 1;
         }
 
         private void btnObrisi_Click(object sender, EventArgs e)
