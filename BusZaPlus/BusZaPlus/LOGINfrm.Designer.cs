@@ -34,6 +34,7 @@
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
+            this.btnBezPrijave = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblUsername
@@ -45,7 +46,6 @@
             this.lblUsername.Size = new System.Drawing.Size(131, 25);
             this.lblUsername.TabIndex = 0;
             this.lblUsername.Text = "Korisničko ime:";
-            this.lblUsername.Click += new System.EventHandler(this.lblUsername_Click);
             // 
             // lblPassword
             // 
@@ -65,7 +65,6 @@
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(182, 29);
             this.txtUsername.TabIndex = 2;
-            this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged);
             // 
             // txtPassword
             // 
@@ -88,12 +87,25 @@
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
+            // btnBezPrijave
+            // 
+            this.btnBezPrijave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(194)))), ((int)(((byte)(173)))));
+            this.btnBezPrijave.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnBezPrijave.Location = new System.Drawing.Point(82, 184);
+            this.btnBezPrijave.Name = "btnBezPrijave";
+            this.btnBezPrijave.Size = new System.Drawing.Size(199, 49);
+            this.btnBezPrijave.TabIndex = 5;
+            this.btnBezPrijave.Text = "NASTAVI BEZ PRIJAVE";
+            this.btnBezPrijave.UseVisualStyleBackColor = false;
+            this.btnBezPrijave.Click += new System.EventHandler(this.btnBezPrijave_Click_1);
+            // 
             // LOGINfrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(229)))), ((int)(((byte)(217)))));
-            this.ClientSize = new System.Drawing.Size(380, 196);
+            this.ClientSize = new System.Drawing.Size(380, 264);
+            this.Controls.Add(this.btnBezPrijave);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
@@ -118,5 +130,6 @@
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Button btnBezPrijave;
     }
 }

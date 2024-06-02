@@ -56,6 +56,18 @@
     <Compile Include="BRISANJEfrm.Designer.cs">
       <DependentUpon>BRISANJEfrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DETALJIfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DETALJIfrm.Designer.cs">
+      <DependentUpon>DETALJIfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bezLINIJEfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bezLINIJEfrm.Designer.cs">
+      <DependentUpon>bezLINIJEfrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Linija.cs" />
     <Compile Include="Repositories\LinijaRepository.cs" />
     <Compile Include="LINIJEfrm.cs">
@@ -86,6 +98,12 @@
     </Compile>
     <EmbeddedResource Include="BRISANJEfrm.resx">
       <DependentUpon>BRISANJEfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DETALJIfrm.resx">
+      <DependentUpon>DETALJIfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bezLINIJEfrm.resx">
+      <DependentUpon>bezLINIJEfrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LOGINfrm.resx">
       <DependentUpon>LOGINfrm.cs</DependentUpon>

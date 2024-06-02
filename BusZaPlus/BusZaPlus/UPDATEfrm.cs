@@ -35,8 +35,7 @@ namespace BusZaPlus
             Hide();
             LINIJEfrm Linijefrm = new LINIJEfrm();
             Linijefrm.ShowDialog();
-            Close();
-        }
+                    }
 
         private void UPDATEfrm_Load(object sender, EventArgs e)
         {

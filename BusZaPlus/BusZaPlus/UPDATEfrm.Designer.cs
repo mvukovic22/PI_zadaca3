@@ -60,88 +60,88 @@
             // lblOpis
             // 
             this.lblOpis.AutoSize = true;
-            this.lblOpis.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblOpis.Location = new System.Drawing.Point(825, 107);
+            this.lblOpis.Font = new System.Drawing.Font("Segoe UI Light", 10F);
+            this.lblOpis.Location = new System.Drawing.Point(780, 168);
             this.lblOpis.Name = "lblOpis";
-            this.lblOpis.Size = new System.Drawing.Size(49, 25);
+            this.lblOpis.Size = new System.Drawing.Size(50, 28);
             this.lblOpis.TabIndex = 18;
             this.lblOpis.Text = "Opis";
             // 
             // lblVrijeme
             // 
             this.lblVrijeme.AutoSize = true;
-            this.lblVrijeme.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblVrijeme.Location = new System.Drawing.Point(663, 107);
+            this.lblVrijeme.Font = new System.Drawing.Font("Segoe UI Light", 10F);
+            this.lblVrijeme.Location = new System.Drawing.Point(618, 168);
             this.lblVrijeme.Name = "lblVrijeme";
-            this.lblVrijeme.Size = new System.Drawing.Size(136, 25);
+            this.lblVrijeme.Size = new System.Drawing.Size(142, 28);
             this.lblVrijeme.TabIndex = 17;
             this.lblVrijeme.Text = "Vrijeme polaska";
             // 
             // lblVozilo
             // 
             this.lblVozilo.AutoSize = true;
-            this.lblVozilo.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblVozilo.Location = new System.Drawing.Point(523, 107);
+            this.lblVozilo.Font = new System.Drawing.Font("Segoe UI Light", 10F);
+            this.lblVozilo.Location = new System.Drawing.Point(478, 168);
             this.lblVozilo.Name = "lblVozilo";
-            this.lblVozilo.Size = new System.Drawing.Size(80, 25);
+            this.lblVozilo.Size = new System.Drawing.Size(82, 28);
             this.lblVozilo.TabIndex = 16;
             this.lblVozilo.Text = "ID vozila";
             // 
             // lblOdrediste
             // 
             this.lblOdrediste.AutoSize = true;
-            this.lblOdrediste.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblOdrediste.Location = new System.Drawing.Point(356, 107);
+            this.lblOdrediste.Font = new System.Drawing.Font("Segoe UI Light", 10F);
+            this.lblOdrediste.Location = new System.Drawing.Point(311, 168);
             this.lblOdrediste.Name = "lblOdrediste";
-            this.lblOdrediste.Size = new System.Drawing.Size(147, 25);
+            this.lblOdrediste.Size = new System.Drawing.Size(155, 28);
             this.lblOdrediste.TabIndex = 15;
             this.lblOdrediste.Text = "Stanica odredišta";
             // 
             // lblPolazak
             // 
             this.lblPolazak.AutoSize = true;
-            this.lblPolazak.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblPolazak.Location = new System.Drawing.Point(194, 107);
+            this.lblPolazak.Font = new System.Drawing.Font("Segoe UI Light", 10F);
+            this.lblPolazak.Location = new System.Drawing.Point(149, 168);
             this.lblPolazak.Name = "lblPolazak";
-            this.lblPolazak.Size = new System.Drawing.Size(133, 25);
+            this.lblPolazak.Size = new System.Drawing.Size(140, 28);
             this.lblPolazak.TabIndex = 14;
             this.lblPolazak.Text = "Stanica polaska";
             // 
             // lblLinija
             // 
             this.lblLinija.AutoSize = true;
-            this.lblLinija.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblLinija.Location = new System.Drawing.Point(57, 107);
+            this.lblLinija.Font = new System.Drawing.Font("Segoe UI Light", 10F);
+            this.lblLinija.Location = new System.Drawing.Point(250, 97);
             this.lblLinija.Name = "lblLinija";
-            this.lblLinija.Size = new System.Drawing.Size(70, 25);
+            this.lblLinija.Size = new System.Drawing.Size(304, 28);
             this.lblLinija.TabIndex = 13;
-            this.lblLinija.Text = "ID linije";
+            this.lblLinija.Text = "Unesite ID linije koju želite izmijeniti";
             // 
             // dateVrijeme
             // 
             this.dateVrijeme.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateVrijeme.Location = new System.Drawing.Point(670, 135);
+            this.dateVrijeme.Location = new System.Drawing.Point(623, 199);
             this.dateVrijeme.Name = "dateVrijeme";
             this.dateVrijeme.Size = new System.Drawing.Size(131, 26);
             this.dateVrijeme.TabIndex = 24;
             // 
             // txtOpis
             // 
-            this.txtOpis.Location = new System.Drawing.Point(832, 135);
+            this.txtOpis.Location = new System.Drawing.Point(785, 199);
             this.txtOpis.Name = "txtOpis";
             this.txtOpis.Size = new System.Drawing.Size(285, 26);
             this.txtOpis.TabIndex = 23;
             // 
             // numVozilo
             // 
-            this.numVozilo.Location = new System.Drawing.Point(530, 135);
+            this.numVozilo.Location = new System.Drawing.Point(483, 199);
             this.numVozilo.Name = "numVozilo";
             this.numVozilo.Size = new System.Drawing.Size(117, 26);
             this.numVozilo.TabIndex = 22;
             // 
             // numLinija
             // 
-            this.numLinija.Location = new System.Drawing.Point(63, 135);
+            this.numLinija.Location = new System.Drawing.Point(581, 102);
             this.numLinija.Name = "numLinija";
             this.numLinija.Size = new System.Drawing.Size(117, 26);
             this.numLinija.TabIndex = 21;
@@ -149,7 +149,7 @@
             // combDolazak
             // 
             this.combDolazak.FormattingEnabled = true;
-            this.combDolazak.Location = new System.Drawing.Point(363, 135);
+            this.combDolazak.Location = new System.Drawing.Point(316, 199);
             this.combDolazak.Name = "combDolazak";
             this.combDolazak.Size = new System.Drawing.Size(139, 28);
             this.combDolazak.TabIndex = 20;
@@ -157,7 +157,7 @@
             // combPolazak
             // 
             this.combPolazak.FormattingEnabled = true;
-            this.combPolazak.Location = new System.Drawing.Point(201, 135);
+            this.combPolazak.Location = new System.Drawing.Point(154, 199);
             this.combPolazak.Name = "combPolazak";
             this.combPolazak.Size = new System.Drawing.Size(139, 28);
             this.combPolazak.TabIndex = 19;
@@ -166,7 +166,7 @@
             // 
             this.btnSpremi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(194)))), ((int)(((byte)(173)))));
             this.btnSpremi.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.btnSpremi.Location = new System.Drawing.Point(524, 212);
+            this.btnSpremi.Location = new System.Drawing.Point(529, 253);
             this.btnSpremi.Name = "btnSpremi";
             this.btnSpremi.Size = new System.Drawing.Size(121, 49);
             this.btnSpremi.TabIndex = 25;
@@ -176,10 +176,10 @@
             // 
             // UPDATEfrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(229)))), ((int)(((byte)(217)))));
-            this.ClientSize = new System.Drawing.Size(1180, 273);
+            this.ClientSize = new System.Drawing.Size(1180, 316);
             this.Controls.Add(this.btnSpremi);
             this.Controls.Add(this.dateVrijeme);
             this.Controls.Add(this.txtOpis);
@@ -194,6 +194,7 @@
             this.Controls.Add(this.lblPolazak);
             this.Controls.Add(this.lblLinija);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;

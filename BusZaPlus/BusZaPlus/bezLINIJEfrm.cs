@@ -12,15 +12,15 @@ using System.Windows.Forms;
 
 namespace BusZaPlus
 {
-    public partial class LINIJEfrm : Form
+    public partial class bezLINIJEfrm : Form
     {
 
-        public LINIJEfrm()
+        public bezLINIJEfrm()
         {
             InitializeComponent();
         }
 
-        private void LINIJEfrm_Load(object sender, EventArgs e)
+        private void bezLINIJEfrm_Load(object sender, EventArgs e)
         {
             ShowVozneLinije();
         }
@@ -48,38 +48,7 @@ namespace BusZaPlus
             dgvLinije.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
-        private void btnNovo_Click(object sender, EventArgs e)
-        {
-            UNOSfrm Unosfrm = new UNOSfrm();
-            Unosfrm.ShowDialog();
-            ShowVozneLinije();
-        }  
-
-        private void btnSpremi_Click(object sender, EventArgs e)
-        {
-            UNOSfrm Unosfrm = new UNOSfrm();
-            Unosfrm.FormClosed += UNOSfrm_FormClosed;
-            Unosfrm.ShowDialog();
-        }
-
-        private void UNOSfrm_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            ShowVozneLinije();
-        }
-
-        private void btnUredi_Click(object sender, EventArgs e)
-        {
-            UPDATEfrm Updatefrm = new UPDATEfrm();
-            Updatefrm.ShowDialog();
-        }
-
-        private void btnIzbrisi_Click_1(object sender, EventArgs e)
-        {
-            BRISANJEfrm Brisanjefrm = new BRISANJEfrm();
-            Brisanjefrm.ShowDialog();
-            //ShowVozneLinije();
-            Close();
-        }
+        
 
         private void btnDetalji_Click(object sender, EventArgs e)
         {

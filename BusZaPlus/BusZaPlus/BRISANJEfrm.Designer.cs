@@ -89,6 +89,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "BRISANJEfrm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Brisanje vozne linije";
             ((System.ComponentModel.ISupportInitialize)(this.numLinija)).EndInit();
             this.ResumeLayout(false);

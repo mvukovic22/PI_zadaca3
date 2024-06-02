@@ -1,6 +1,6 @@
 ﻿namespace BusZaPlus
 {
-    partial class LINIJEfrm
+    partial class bezLINIJEfrm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LINIJEfrm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(bezLINIJEfrm));
             this.dgvLinije = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnNovo = new System.Windows.Forms.Button();
-            this.btnUredi = new System.Windows.Forms.Button();
-            this.btnIzbrisi = new System.Windows.Forms.Button();
+            this.btnPretrazi = new System.Windows.Forms.Button();
             this.btnDetalji = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLinije)).BeginInit();
             this.SuspendLayout();
@@ -63,41 +61,16 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "PRIKAZ SVIH VOZNIH LINIJA";
             // 
-            // btnNovo
+            // btnPretrazi
             // 
-            this.btnNovo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(194)))), ((int)(((byte)(173)))));
-            this.btnNovo.Font = new System.Drawing.Font("Segoe UI Light", 12F);
-            this.btnNovo.Location = new System.Drawing.Point(18, 427);
-            this.btnNovo.Name = "btnNovo";
-            this.btnNovo.Size = new System.Drawing.Size(202, 51);
-            this.btnNovo.TabIndex = 3;
-            this.btnNovo.Text = "KREIRAJ NOVO";
-            this.btnNovo.UseVisualStyleBackColor = false;
-            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
-            // 
-            // btnUredi
-            // 
-            this.btnUredi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(194)))), ((int)(((byte)(173)))));
-            this.btnUredi.Font = new System.Drawing.Font("Segoe UI Light", 12F);
-            this.btnUredi.Location = new System.Drawing.Point(255, 427);
-            this.btnUredi.Name = "btnUredi";
-            this.btnUredi.Size = new System.Drawing.Size(121, 51);
-            this.btnUredi.TabIndex = 4;
-            this.btnUredi.Text = "UREDI";
-            this.btnUredi.UseVisualStyleBackColor = false;
-            this.btnUredi.Click += new System.EventHandler(this.btnUredi_Click);
-            // 
-            // btnIzbrisi
-            // 
-            this.btnIzbrisi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(194)))), ((int)(((byte)(173)))));
-            this.btnIzbrisi.Font = new System.Drawing.Font("Segoe UI Light", 12F);
-            this.btnIzbrisi.Location = new System.Drawing.Point(413, 427);
-            this.btnIzbrisi.Name = "btnIzbrisi";
-            this.btnIzbrisi.Size = new System.Drawing.Size(121, 51);
-            this.btnIzbrisi.TabIndex = 5;
-            this.btnIzbrisi.Text = "IZBRIŠI";
-            this.btnIzbrisi.UseVisualStyleBackColor = false;
-            this.btnIzbrisi.Click += new System.EventHandler(this.btnIzbrisi_Click_1);
+            this.btnPretrazi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(194)))), ((int)(((byte)(173)))));
+            this.btnPretrazi.Font = new System.Drawing.Font("Segoe UI Light", 12F);
+            this.btnPretrazi.Location = new System.Drawing.Point(572, 427);
+            this.btnPretrazi.Name = "btnPretrazi";
+            this.btnPretrazi.Size = new System.Drawing.Size(139, 51);
+            this.btnPretrazi.TabIndex = 6;
+            this.btnPretrazi.Text = "PRETRAŽI";
+            this.btnPretrazi.UseVisualStyleBackColor = false;
             // 
             // btnDetalji
             // 
@@ -109,16 +82,14 @@
             this.btnDetalji.UseVisualStyleBackColor = true;
             this.btnDetalji.Click += new System.EventHandler(this.btnDetalji_Click);
             // 
-            // LINIJEfrm
+            // bezLINIJEfrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(229)))), ((int)(((byte)(217)))));
             this.ClientSize = new System.Drawing.Size(1127, 509);
             this.Controls.Add(this.btnDetalji);
-            this.Controls.Add(this.btnIzbrisi);
-            this.Controls.Add(this.btnUredi);
-            this.Controls.Add(this.btnNovo);
+            this.Controls.Add(this.btnPretrazi);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvLinije);
             this.Font = new System.Drawing.Font("Segoe UI", 8F);
@@ -127,10 +98,10 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "LINIJEfrm";
+            this.Name = "bezLINIJEfrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Prikaz svih voznih linija";
-            this.Load += new System.EventHandler(this.LINIJEfrm_Load);
+            this.Load += new System.EventHandler(this.bezLINIJEfrm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLinije)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -141,9 +112,7 @@
 
         private System.Windows.Forms.DataGridView dgvLinije;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnNovo;
-        private System.Windows.Forms.Button btnUredi;
-        private System.Windows.Forms.Button btnIzbrisi;
+        private System.Windows.Forms.Button btnPretrazi;
         private System.Windows.Forms.Button btnDetalji;
     }
 }
