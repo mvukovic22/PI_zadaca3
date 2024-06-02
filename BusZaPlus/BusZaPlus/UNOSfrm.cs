@@ -20,9 +20,11 @@ namespace BusZaPlus
         public UNOSfrm()
         {
             InitializeComponent();
+            numVozilo.Value = 1;
             numVozilo.Minimum = 1;
             numVozilo.Maximum = 10;
             numLinija.Minimum = 1;
+            numLinija.Value = 1;
         }
 
         private void UNOSfrm_Load(object sender, EventArgs e)
@@ -35,7 +37,7 @@ namespace BusZaPlus
 
         }
 
-        private void btnSpremi_Click(object sender, EventArgs e)
+        private void BtnSpremi_Click(object sender, EventArgs e)
         {
             var linija = new Linija()
             {

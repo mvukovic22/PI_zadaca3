@@ -17,7 +17,7 @@ namespace BusZaPlus
             InitializeComponent();
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void BtnLogin_Click(object sender, EventArgs e)
         {
            string username = txtUsername.Text;
            string password = txtPassword.Text;
@@ -29,7 +29,6 @@ namespace BusZaPlus
 
             else if (username == "mladenvukovic55" && password == "2503")
             {
-                Hide();
                 MessageBox.Show("Prijavljeni ste kao zaposlenik", "Prijava", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 LINIJEfrm Linijefrm = new LINIJEfrm();
                 Linijefrm.ShowDialog();
@@ -38,12 +37,13 @@ namespace BusZaPlus
 
             {
                 MessageBox.Show("Pogrešni podaci", "Neuspjela prijava", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Close();
             }
         }
 
-        private void btnBezPrijave_Click_1(object sender, EventArgs e)
+        private void BtnBezPrijave_Click_1(object sender, EventArgs e)
         {
-            Hide();
+            
             MessageBox.Show("Nastavljate bez prijave", "Prijava", MessageBoxButtons.OK, MessageBoxIcon.Information);
             bezLINIJEfrm BezPrijavefrm = new bezLINIJEfrm();
             BezPrijavefrm.ShowDialog();

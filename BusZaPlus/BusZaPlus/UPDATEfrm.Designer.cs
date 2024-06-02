@@ -42,7 +42,7 @@
             this.numLinija = new System.Windows.Forms.NumericUpDown();
             this.combDolazak = new System.Windows.Forms.ComboBox();
             this.combPolazak = new System.Windows.Forms.ComboBox();
-            this.btnSpremi = new System.Windows.Forms.Button();
+            this.BtnSpremi = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numVozilo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numLinija)).BeginInit();
             this.SuspendLayout();
@@ -119,24 +119,27 @@
             // 
             // dateVrijeme
             // 
+            this.dateVrijeme.Font = new System.Drawing.Font("Segoe UI Light", 8F);
             this.dateVrijeme.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dateVrijeme.Location = new System.Drawing.Point(623, 199);
             this.dateVrijeme.Name = "dateVrijeme";
-            this.dateVrijeme.Size = new System.Drawing.Size(131, 26);
+            this.dateVrijeme.Size = new System.Drawing.Size(131, 29);
             this.dateVrijeme.TabIndex = 24;
             // 
             // txtOpis
             // 
+            this.txtOpis.Font = new System.Drawing.Font("Segoe UI Light", 8F);
             this.txtOpis.Location = new System.Drawing.Point(785, 199);
             this.txtOpis.Name = "txtOpis";
-            this.txtOpis.Size = new System.Drawing.Size(285, 26);
+            this.txtOpis.Size = new System.Drawing.Size(285, 29);
             this.txtOpis.TabIndex = 23;
             // 
             // numVozilo
             // 
+            this.numVozilo.Font = new System.Drawing.Font("Segoe UI Light", 8F);
             this.numVozilo.Location = new System.Drawing.Point(483, 199);
             this.numVozilo.Name = "numVozilo";
-            this.numVozilo.Size = new System.Drawing.Size(117, 26);
+            this.numVozilo.Size = new System.Drawing.Size(117, 29);
             this.numVozilo.TabIndex = 22;
             // 
             // numLinija
@@ -148,31 +151,33 @@
             // 
             // combDolazak
             // 
+            this.combDolazak.Font = new System.Drawing.Font("Segoe UI Light", 8F);
             this.combDolazak.FormattingEnabled = true;
             this.combDolazak.Location = new System.Drawing.Point(316, 199);
             this.combDolazak.Name = "combDolazak";
-            this.combDolazak.Size = new System.Drawing.Size(139, 28);
+            this.combDolazak.Size = new System.Drawing.Size(139, 29);
             this.combDolazak.TabIndex = 20;
             // 
             // combPolazak
             // 
+            this.combPolazak.Font = new System.Drawing.Font("Segoe UI Light", 8F);
             this.combPolazak.FormattingEnabled = true;
             this.combPolazak.Location = new System.Drawing.Point(154, 199);
             this.combPolazak.Name = "combPolazak";
-            this.combPolazak.Size = new System.Drawing.Size(139, 28);
+            this.combPolazak.Size = new System.Drawing.Size(139, 29);
             this.combPolazak.TabIndex = 19;
             // 
-            // btnSpremi
+            // BtnSpremi
             // 
-            this.btnSpremi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(194)))), ((int)(((byte)(173)))));
-            this.btnSpremi.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.btnSpremi.Location = new System.Drawing.Point(529, 253);
-            this.btnSpremi.Name = "btnSpremi";
-            this.btnSpremi.Size = new System.Drawing.Size(121, 49);
-            this.btnSpremi.TabIndex = 25;
-            this.btnSpremi.Text = "SPREMI";
-            this.btnSpremi.UseVisualStyleBackColor = false;
-            this.btnSpremi.Click += new System.EventHandler(this.btnSpremi_Click);
+            this.BtnSpremi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(194)))), ((int)(((byte)(173)))));
+            this.BtnSpremi.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.BtnSpremi.Location = new System.Drawing.Point(529, 253);
+            this.BtnSpremi.Name = "BtnSpremi";
+            this.BtnSpremi.Size = new System.Drawing.Size(121, 49);
+            this.BtnSpremi.TabIndex = 25;
+            this.BtnSpremi.Text = "SPREMI";
+            this.BtnSpremi.UseVisualStyleBackColor = false;
+            this.BtnSpremi.Click += new System.EventHandler(this.BtnSpremi_Click);
             // 
             // UPDATEfrm
             // 
@@ -180,7 +185,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(229)))), ((int)(((byte)(217)))));
             this.ClientSize = new System.Drawing.Size(1180, 316);
-            this.Controls.Add(this.btnSpremi);
+            this.Controls.Add(this.BtnSpremi);
             this.Controls.Add(this.dateVrijeme);
             this.Controls.Add(this.txtOpis);
             this.Controls.Add(this.numVozilo);
@@ -224,6 +229,6 @@
         private System.Windows.Forms.NumericUpDown numLinija;
         private System.Windows.Forms.ComboBox combDolazak;
         private System.Windows.Forms.ComboBox combPolazak;
-        private System.Windows.Forms.Button btnSpremi;
+        private System.Windows.Forms.Button BtnSpremi;
     }
 }

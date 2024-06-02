@@ -18,17 +18,33 @@ namespace BusZaPlus
         public UPDATEfrm()
         {
             InitializeComponent();
+            numVozilo.Minimum = 1;
+            numVozilo.Maximum = 10;
+            numLinija.Value = 1;
+            numVozilo.Value = 1;
         }
 
-        private void btnSpremi_Click(object sender, EventArgs e)
+        private void UPDATEfrm_Load(object sender, EventArgs e)
         {
-            Linija linija = new Linija();
-            linija.ID_linije = int.Parse(numLinija.Text);
-            linija.ID_stanice_polazak = int.Parse(combPolazak.Text);
-            linija.ID_stanice_dolazak = int.Parse(combDolazak.Text);
-            linija.ID_vozila = int.Parse(numVozilo.Text);
-            linija.Termin_dolaska = TimeSpan.Parse(dateVrijeme.Text);
-            linija.Opis = txtOpis.Text;
+            for (int i = 1; i <= 10; i++)
+            {
+                combPolazak.Items.Add(i.ToString());
+                combDolazak.Items.Add(i.ToString());
+            }
+
+        }
+
+        private void BtnSpremi_Click(object sender, EventArgs e)
+        {
+            Linija linija = new Linija()
+            {
+                ID_linije = int.Parse(numLinija.Text),
+                ID_stanice_polazak = int.Parse(combPolazak.Text),
+                ID_stanice_dolazak = int.Parse(combDolazak.Text),
+                ID_vozila = int.Parse(numVozilo.Text),
+                Termin_dolaska = TimeSpan.Parse(dateVrijeme.Text),
+                Opis = txtOpis.Text
+            };
 
             LinijaRepository.AzuriranjeLinije(linija);
             MessageBox.Show("Linije su uspješno izmijenjene.", "Uspješno", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -37,9 +53,6 @@ namespace BusZaPlus
             Linijefrm.ShowDialog();
                     }
 
-        private void UPDATEfrm_Load(object sender, EventArgs e)
-        {
 
-        }
     }
 }

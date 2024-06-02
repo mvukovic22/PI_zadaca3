@@ -42,7 +42,7 @@
             this.lblVozilo = new System.Windows.Forms.Label();
             this.lblVrijeme = new System.Windows.Forms.Label();
             this.lblOpis = new System.Windows.Forms.Label();
-            this.btnSpremi = new System.Windows.Forms.Button();
+            this.BtnSpremi = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numLinija)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numVozilo)).BeginInit();
             this.SuspendLayout();
@@ -162,17 +162,17 @@
             this.lblOpis.TabIndex = 12;
             this.lblOpis.Text = "Opis";
             // 
-            // btnSpremi
+            // BtnSpremi
             // 
-            this.btnSpremi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(194)))), ((int)(((byte)(173)))));
-            this.btnSpremi.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.btnSpremi.Location = new System.Drawing.Point(524, 212);
-            this.btnSpremi.Name = "btnSpremi";
-            this.btnSpremi.Size = new System.Drawing.Size(121, 49);
-            this.btnSpremi.TabIndex = 13;
-            this.btnSpremi.Text = "SPREMI";
-            this.btnSpremi.UseVisualStyleBackColor = false;
-            this.btnSpremi.Click += new System.EventHandler(this.btnSpremi_Click);
+            this.BtnSpremi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(194)))), ((int)(((byte)(173)))));
+            this.BtnSpremi.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.BtnSpremi.Location = new System.Drawing.Point(524, 212);
+            this.BtnSpremi.Name = "BtnSpremi";
+            this.BtnSpremi.Size = new System.Drawing.Size(121, 49);
+            this.BtnSpremi.TabIndex = 13;
+            this.BtnSpremi.Text = "SPREMI";
+            this.BtnSpremi.UseVisualStyleBackColor = false;
+            this.BtnSpremi.Click += new System.EventHandler(this.BtnSpremi_Click);
             // 
             // UNOSfrm
             // 
@@ -180,7 +180,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(229)))), ((int)(((byte)(217)))));
             this.ClientSize = new System.Drawing.Size(1180, 273);
-            this.Controls.Add(this.btnSpremi);
+            this.Controls.Add(this.BtnSpremi);
             this.Controls.Add(this.lblOpis);
             this.Controls.Add(this.lblVrijeme);
             this.Controls.Add(this.lblVozilo);
@@ -223,6 +223,6 @@
         private System.Windows.Forms.Label lblVozilo;
         private System.Windows.Forms.Label lblVrijeme;
         private System.Windows.Forms.Label lblOpis;
-        private System.Windows.Forms.Button btnSpremi;
+        private System.Windows.Forms.Button BtnSpremi;
     }
 }

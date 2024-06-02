@@ -33,8 +33,8 @@
             this.lblPassword = new System.Windows.Forms.Label();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
-            this.btnLogin = new System.Windows.Forms.Button();
-            this.btnBezPrijave = new System.Windows.Forms.Button();
+            this.BtnLogin = new System.Windows.Forms.Button();
+            this.BtnBezPrijave = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblUsername
@@ -75,29 +75,29 @@
             this.txtPassword.Size = new System.Drawing.Size(182, 29);
             this.txtPassword.TabIndex = 3;
             // 
-            // btnLogin
+            // BtnLogin
             // 
-            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(194)))), ((int)(((byte)(173)))));
-            this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnLogin.Location = new System.Drawing.Point(141, 129);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(98, 49);
-            this.btnLogin.TabIndex = 4;
-            this.btnLogin.Text = "PRIJAVA";
-            this.btnLogin.UseVisualStyleBackColor = false;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            this.BtnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(194)))), ((int)(((byte)(173)))));
+            this.BtnLogin.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BtnLogin.Location = new System.Drawing.Point(141, 129);
+            this.BtnLogin.Name = "BtnLogin";
+            this.BtnLogin.Size = new System.Drawing.Size(98, 49);
+            this.BtnLogin.TabIndex = 4;
+            this.BtnLogin.Text = "PRIJAVA";
+            this.BtnLogin.UseVisualStyleBackColor = false;
+            this.BtnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // btnBezPrijave
+            // BtnBezPrijave
             // 
-            this.btnBezPrijave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(194)))), ((int)(((byte)(173)))));
-            this.btnBezPrijave.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnBezPrijave.Location = new System.Drawing.Point(82, 184);
-            this.btnBezPrijave.Name = "btnBezPrijave";
-            this.btnBezPrijave.Size = new System.Drawing.Size(199, 49);
-            this.btnBezPrijave.TabIndex = 5;
-            this.btnBezPrijave.Text = "NASTAVI BEZ PRIJAVE";
-            this.btnBezPrijave.UseVisualStyleBackColor = false;
-            this.btnBezPrijave.Click += new System.EventHandler(this.btnBezPrijave_Click_1);
+            this.BtnBezPrijave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(194)))), ((int)(((byte)(173)))));
+            this.BtnBezPrijave.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BtnBezPrijave.Location = new System.Drawing.Point(82, 184);
+            this.BtnBezPrijave.Name = "BtnBezPrijave";
+            this.BtnBezPrijave.Size = new System.Drawing.Size(199, 49);
+            this.BtnBezPrijave.TabIndex = 5;
+            this.BtnBezPrijave.Text = "NASTAVI BEZ PRIJAVE";
+            this.BtnBezPrijave.UseVisualStyleBackColor = false;
+            this.BtnBezPrijave.Click += new System.EventHandler(this.btnBezPrijave_Click_1);
             // 
             // LOGINfrm
             // 
@@ -105,8 +105,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(229)))), ((int)(((byte)(217)))));
             this.ClientSize = new System.Drawing.Size(380, 264);
-            this.Controls.Add(this.btnBezPrijave);
-            this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.BtnBezPrijave);
+            this.Controls.Add(this.BtnLogin);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.lblPassword);
@@ -129,7 +129,7 @@
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.Button btnBezPrijave;
+        private System.Windows.Forms.Button BtnLogin;
+        private System.Windows.Forms.Button BtnBezPrijave;
     }
 }
