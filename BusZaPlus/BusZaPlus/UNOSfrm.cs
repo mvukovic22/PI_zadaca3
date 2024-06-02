@@ -22,7 +22,7 @@ namespace BusZaPlus
             InitializeComponent();
             numVozilo.Value = 1;
             numVozilo.Minimum = 1;
-            numVozilo.Maximum = 10;
+            numVozilo.Maximum = 15;
             numLinija.Minimum = 1;
             numLinija.Value = 1;
         }
