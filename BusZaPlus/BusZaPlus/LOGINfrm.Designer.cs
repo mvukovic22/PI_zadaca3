@@ -59,21 +59,26 @@
             // 
             // txtUsername
             // 
+            this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtUsername.Font = new System.Drawing.Font("Segoe UI Light", 8F);
             this.txtUsername.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.txtUsername.Location = new System.Drawing.Point(158, 34);
+            this.txtUsername.Location = new System.Drawing.Point(162, 30);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(182, 29);
             this.txtUsername.TabIndex = 2;
+            this.txtUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged);
             // 
             // txtPassword
             // 
+            this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPassword.Font = new System.Drawing.Font("Segoe UI Light", 8F);
-            this.txtPassword.Location = new System.Drawing.Point(158, 75);
+            this.txtPassword.Location = new System.Drawing.Point(162, 71);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(182, 29);
             this.txtPassword.TabIndex = 3;
+            this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // BtnLogin
             // 
@@ -101,8 +106,8 @@
             // 
             // LOGINfrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(229)))), ((int)(((byte)(217)))));
             this.ClientSize = new System.Drawing.Size(380, 264);
             this.Controls.Add(this.BtnBezPrijave);

@@ -102,6 +102,7 @@
             // 
             // txtPretraga
             // 
+            this.txtPretraga.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPretraga.Font = new System.Drawing.Font("Segoe UI Light", 12F);
             this.txtPretraga.Location = new System.Drawing.Point(502, 462);
             this.txtPretraga.Name = "txtPretraga";
@@ -132,8 +133,9 @@
             // 
             // txtPretraga2
             // 
+            this.txtPretraga2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPretraga2.Font = new System.Drawing.Font("Segoe UI Light", 12F);
-            this.txtPretraga2.Location = new System.Drawing.Point(502, 518);
+            this.txtPretraga2.Location = new System.Drawing.Point(502, 521);
             this.txtPretraga2.Name = "txtPretraga2";
             this.txtPretraga2.Size = new System.Drawing.Size(218, 39);
             this.txtPretraga2.TabIndex = 12;

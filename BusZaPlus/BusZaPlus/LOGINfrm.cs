@@ -30,8 +30,8 @@ namespace BusZaPlus
             else if (username == "mladenvukovic55" && password == "2503")
             {
                 MessageBox.Show("Prijavljeni ste kao zaposlenik", "Prijava", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                LINIJEfrm Linijefrm = new LINIJEfrm();
-                Linijefrm.ShowDialog();
+                POCETNAZAPOSLENIKfrm PocetnaZaposlenikfrm = new POCETNAZAPOSLENIKfrm();
+                PocetnaZaposlenikfrm.ShowDialog();
                 Close();
             }
 
@@ -45,9 +45,14 @@ namespace BusZaPlus
         {
             
             MessageBox.Show("Nastavljate bez prijave", "Prijava", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            bezLINIJEfrm BezPrijavefrm = new bezLINIJEfrm();
-            BezPrijavefrm.ShowDialog();
+            POCETNAKORISNIKfrm PocetnaKorisnikfrm = new POCETNAKORISNIKfrm();
+            PocetnaKorisnikfrm.ShowDialog();
             Close();
+        }
+
+        private void txtUsername_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

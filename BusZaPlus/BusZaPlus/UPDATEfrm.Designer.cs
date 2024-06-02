@@ -128,6 +128,7 @@
             // 
             // txtOpis
             // 
+            this.txtOpis.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtOpis.Font = new System.Drawing.Font("Segoe UI Light", 8F);
             this.txtOpis.Location = new System.Drawing.Point(785, 199);
             this.txtOpis.Name = "txtOpis";

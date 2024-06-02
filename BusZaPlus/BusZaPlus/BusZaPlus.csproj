@@ -75,6 +75,18 @@
       <DependentUpon>bezLINIJEfrm.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Linija.cs" />
+    <Compile Include="POCETNAKORISNIKfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POCETNAKORISNIKfrm.Designer.cs">
+      <DependentUpon>POCETNAKORISNIKfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POCETNAZAPOSLENIKfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POCETNAZAPOSLENIKfrm.Designer.cs">
+      <DependentUpon>POCETNAZAPOSLENIKfrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Repositories\LinijaRepository.cs" />
     <Compile Include="LINIJEfrm.cs">
       <SubType>Form</SubType>
@@ -88,7 +100,7 @@
     <Compile Include="LOGINfrm.Designer.cs">
       <DependentUpon>LOGINfrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="Models\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UNOSfrm.cs">
       <SubType>Form</SubType>
@@ -116,6 +128,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LOGINfrm.resx">
       <DependentUpon>LOGINfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POCETNAKORISNIKfrm.resx">
+      <DependentUpon>POCETNAKORISNIKfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POCETNAZAPOSLENIKfrm.resx">
+      <DependentUpon>POCETNAZAPOSLENIKfrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
