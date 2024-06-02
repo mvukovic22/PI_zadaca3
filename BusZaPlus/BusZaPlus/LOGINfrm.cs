@@ -37,7 +37,6 @@ namespace BusZaPlus
 
             {
                 MessageBox.Show("Pogrešni podaci", "Neuspjela prijava", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                Close();
             }
         }
 

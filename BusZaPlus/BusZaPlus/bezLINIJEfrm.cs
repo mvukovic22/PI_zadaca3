@@ -57,14 +57,6 @@ namespace BusZaPlus
             //ShowVozneLinije();
             Close();
         }
-
-        /*private void pretrazifunkcija()
-        {
-            int uvjet = int.Parse(txtPretraga.Text);
-            int uvjet2 = int.Parse(txtPretraga2.Text);
-            List<Linija> linije = LinijaRepository.PretrazivanjeLinije(uvjet, uvjet2);
-            dgvLinije.DataSource = linije;
-        }*/
         private void pretrazifunkcija()
         {
             int uvjet;
@@ -74,7 +66,6 @@ namespace BusZaPlus
             {
                 if (!string.IsNullOrEmpty(txtPretraga2.Text) && int.TryParse(txtPretraga2.Text, out uvjet2))
                 {
-                    // Ako su oba uvjeta upisana, pretraži po oba uvjeta
                     List<Linija> linije = LinijaRepository.PretrazivanjeLinije(uvjet, uvjet2);
                     dgvLinije.DataSource = linije;
                 }
